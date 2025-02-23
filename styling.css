@@ -1,0 +1,110 @@
+.inputs{
+    font-size: 30px;
+    width: 500px;
+    
+}
+.inputtext{
+    font-weight:Bold;
+    font-size: 20px;
+    margin-top:60px;
+}
+.button{
+    background-color: blue;
+    color: white;
+    border:none;
+    height: 40px;
+    width: 105px;
+    border-radius:30px;
+    margin-top:30px;
+    margin-left:200px;
+    cursor: pointer;
+}
+.button:hover{
+opacity: 0.7;
+}
+.button:active{
+opacity: 0.5;
+}
+.title1{  
+
+    font-family:Comic Sans-serif;
+    font-size:30px;
+    text-align: center;
+}
+.title2{   
+
+    font-family:Comic Sans-serif;
+    font-size:30px;
+    text-align: center;
+    margin-top:50px;
+}
+.text1{  
+                 
+    font-family:Comic Sans-serif;
+    font-size:30px;
+    text-align: center;
+    margin-top:100px;
+}
+.text3{                            
+    font-family:Comic Sans-serif;
+    font-size:30px;
+    text-align: center;
+    margin-top:100px;
+}
+.image1{
+
+    width: 400px;
+    height:300px;
+    object-fit: cover;
+    margin-top:100px;
+    margin-left:350px;
+    margin-right:1050px;
+    margin-bottom:100px;
+    
+}
+.image2{
+
+    width: 400px;
+    height:300px;
+    margin-top:100px;
+    margin-bottom:100px;
+    object-fit: cover;
+    
+}
+.inputs{
+    font-size: 30px;
+    width: 500px;
+    
+}
+.inputs2{
+    font-size: 30px;
+    width: 500px;
+    height: 200px;
+    
+}
+.inputtext{
+    font-weight:Bold;
+    font-size: 20px;
+    margin-top:60px;
+}
+.input2{
+    font-size: 20px;
+    font-weight:Bold;
+}
+.button2{
+    background-color: blue;
+    color: white;
+    border:none;
+    height: 40px;
+    width: 105px;
+    border-radius:30px;
+    margin-top:30px;
+    margin-left:200px;
+    cursor: pointer;
+}
+.button2:hover{
+     opacity: 0.7;
+}
+.button2:active{
+    opacity: 0.5;
+}
