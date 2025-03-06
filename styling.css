@@ -51,6 +51,7 @@ opacity: 0.5;
     font-size:30px;
     text-align: center;
     margin-top:100px;
+    margin: auto; 
 }
 .text2{                            
     font-family:Comic Sans-serif;
@@ -113,11 +114,24 @@ opacity: 0.5;
     opacity: 0.5;
 }
 .flexbox{
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:150px;
+    margin-bottom:150px;
+    width: 1000px;
     display: flex; 
+    background-color: rgb(64, 64, 68);
     justify-content: center; 
     align-items: center; 
     gap: 20px; 
     height: 500px;
+}
+.flexbox1{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    height: 200px;
 }
 body {
     background-color: rgb(201, 194, 194);
