@@ -3,18 +3,20 @@
     <head>
         <title>Login Page</title>
         <link rel="stylesheet" href="styling.css">
+        <script defer src="script.js"></script>
     </head>
     <body>
-        <h1>Login Page</h1>
-        <div class="login-box">
-            <label class="inputtext">Username:</label>
-            <input class="text2" placeholder="Username">
-        
-            <label class="inputtext">Password:</label>
-            <input type="password" class="text2"  placeholder="Password">
-        
-            <button class="button">Login</button>
-        </div>
-        
+        <form id="form">
+            <h1>Login Page</h1>
+            <div class="login-box">
+                <label class="inputtext">Username:</label>
+                <input id="username" type="text" class="text2" placeholder="Username" required>
+            
+                <label class="inputtext">Password:</label>
+                <input id="password" type="password" class="text2"  placeholder="Password" required>
+                <p id="error"></p>
+                <button type="submit" class="button">Login</button>
+            </div>
+        </form>
     </body>
 </html>
