@@ -8,7 +8,7 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault();
 
     if (password.value.length<6 || password.value.length>20){
-        alert("Password must be bettween 6 and 20 characters");
+        alert("Password must be between 6 and 20 characters");
         return;
     }
     if (password.value !== "admin123" && username.value !== "admin123"){
