@@ -1,36 +1,24 @@
-const username = document.getElementById("username")
-const password = document.getElementById("password")
-const form= document.getElementById("form")
+const button= document.querySelector("button");
+const output = document.querySelector(".results");
 
-//default username and password: admin123
+button.addEventListener('click',roller);
 
-form.addEventListener('submit', (e)=>{
-    e.preventDefault();
 
-    if (password.value.length<6 || password.value.length>20){
-        alert("Password must be between 6 and 20 characters");
-        return;
-    }
-    if (password.value !== "admin123" && username.value !== "admin123"){
-        alert("Username and Password are wrong");
-        return;
-    }
-    if (password.value !== "admin123"){
-        alert("Password is wrong");
-        return;
-    }
-    if (username.value !== "admin123"){
-        alert("Username is wrong");
-        return;
-    }
-    if (username.value === "admin123" && password.value === "admin123"){
-        clearFields();
-        alert("Login successful!");
-    }
+function roller() {
+    output.innerHTML = ""; 
 
-});
-
-function clearFields() {
-    username.value = "";
-    password.value = "";
+    const val= [];
+    for (let i = 0; i < 2; i++) {  
+        const ranNum = Math.floor(Math.random() * 6) + 1;
+        val[i] = 9855 + ranNum; 
+        output.innerHTML += `&#${val[i]}; `; 
+    }
+    setTimeout(() => {
+    if ((val[0]+val[1]) %2 === 0){
+        alert("You win");
+    }
+    else{
+        alert("You lose")
+    }
+}, 200);
 }
