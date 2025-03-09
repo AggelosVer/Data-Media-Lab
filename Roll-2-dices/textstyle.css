@@ -1,0 +1,51 @@
+.texttitle {
+    color: #333; 
+    font-size: 40px; 
+    font-family:Comic sans-serif;
+    font-weight: bold; 
+    text-align: center; 
+    text-transform: uppercase; 
+    text-decoration: underline; 
+    line-height: 1.5; 
+    word-spacing: 3px; 
+  }
+  
+  .results{
+    font-size: 200px; 
+    font-family:Comic sans-serif;
+    word-spacing: 3px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    height: 200px;
+  }
+
+  .centerbutton{
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .button{
+    background-color: rgb(36, 39, 37);
+    color: white;
+    border:none;
+    height: 40px;
+    width: 200px;
+    border-radius:30px;
+    cursor: pointer;
+    margin-top:50px;
+}
+.button:hover{
+opacity: 0.7;
+}
+.button:active{
+opacity: 0.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh; 
+}
