@@ -19,6 +19,7 @@ button.addEventListener('click',() =>{
 
 function roller() {
 
+    button.disabled = true; 
     output.innerHTML = ""; 
 
     const val= [];
@@ -66,6 +67,8 @@ function roller() {
     scoreDisplay.innerText = `Score: ${score}`;
     HitsDisplay.innerText = `Rolls: ${hits}`;
     HighScoreDisplay.innerText = `HighScore: ${highscore}`;
+
+    button.disabled = false;
     }, 200);
     return score;
 }
