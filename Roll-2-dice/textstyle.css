@@ -88,7 +88,6 @@ html, body {
     border-radius:30px;
     cursor: pointer;
     margin-top:50px;
-    margin-bottom:80px;
 }
 .button:hover{
 opacity: 0.7;
@@ -125,6 +124,14 @@ opacity: 0.5;
 
 .text6{
   color: #b42b26;
+  font-size: 30px; 
+  font-family:Comic sans-serif;
+  text-align: center; 
+  line-height: 1.5; 
+  word-spacing: 3px; 
+}
+.text7{
+  color: #429ccf;
   font-size: 30px; 
   font-family:Comic sans-serif;
   text-align: center; 
@@ -174,4 +181,21 @@ body {
 .empty-div {
   width: 10px;;
   height: 200px;
+}
+.card-container {
+  font-weight: bold; 
+  height:30px;
+  width:300px;
+  margin-left: auto;
+  margin-right:auto;
+  padding: 10px;
+  background-color: #429ccf;
+  font-size: 25px;
+  text-align: center;
+  color: #333;
+  margin-top:150px;
+  visibility: hidden;
+}
+.card-text {
+  margin: 0;
 }
