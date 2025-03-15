@@ -16,7 +16,7 @@ html, body {
 
   .textRules {
     color: #f8f4f4;  
-    font-size: 25px; 
+    font-size: 40px; 
     font-family:Comic sans-serif;
     font-weight: bold; 
     text-align: center; 
@@ -194,7 +194,6 @@ body {
   text-align: center;
   color: #333;
   margin-top:150px;
-  visibility: hidden;
 }
 .card-text {
   margin: 0;
