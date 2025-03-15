@@ -14,7 +14,7 @@ let cardCount = 1;
 
 scoreDisplay.innerText = `Score: ${score}`;
 HitsDisplay.innerText = `Rolls: ${hits}`;
-HighScoreDisplay.innerText = `HighScore: ${highscore}`;
+HighScoreDisplay.innerText = `HighRoll: ${highscore}`;
 output.innerHTML += `&#${9861}; `; 
 output.innerHTML += `&#${9861}; `;
 
@@ -117,7 +117,7 @@ function roller() {
     }
     scoreDisplay.innerText = `Score: ${score}`;
     HitsDisplay.innerText = `Rolls: ${hits}`;
-    HighScoreDisplay.innerText = `HighScore: ${highscore}`;
+    HighScoreDisplay.innerText = `HighRoll: ${highscore}`;
     messageBox.innerHTML = message;
     button.disabled = false;
     }, 200);
