@@ -49,7 +49,6 @@ function roller() {
             cardContainer.style.visibility = "visible"; 
             cardCountDisplay.innerText = cardCount;
             message="You gain a protection card!"
-            showImage();
         }
 
 
