@@ -14,7 +14,7 @@ let cardCount = 1;
 
 scoreDisplay.innerText = `Score: ${score}`;
 HitsDisplay.innerText = `Rolls: ${hits}`;
-HighScoreDisplay.innerText = `HighRoll: ${highscore}`;
+HighScoreDisplay.innerText = `HighScore: ${highscore}`;
 output.innerHTML += `&#${9861}; `; 
 output.innerHTML += `&#${9861}; `;
 
@@ -48,22 +48,22 @@ function roller() {
             cardCount++;  
             cardContainer.style.visibility = "visible"; 
             cardCountDisplay.innerText = cardCount;
-            message="You gain a protection card!"
+            message="You gain a protection shield!"
         }
 
 
         if (((ranNum[0] + ranNum[1])%2 === 0) && ranNum[0]!==ranNum[1]) {
             score=score+3
-            if (hits>highscore){
-                highscore=hits;
+            if (score>highscore){
+                highscore=score;
             }
            message="You win 3 points!";
         }
 
         else if(ranNum[0] === ranNum[1] && ranNum[0] + ranNum[1] !== 2){
             score=score+4
-            if (hits>highscore){
-                highscore=hits;
+            if (score>highscore){
+                highscore=score;
             }
             message="You win 4 points!"   ; 
         }
@@ -72,15 +72,15 @@ function roller() {
             if (cardCount>0){
                 cardCount--;
                 cardCountDisplay.innerText = cardCount;
-                message= "Your Protection Card saved you!"
+                message= "Your Protection shield saved you!"
                 if (cardCount === 0) {
                     cardContainer.style.visibility = "hidden"; 
                 }
            }
             else{
                 score=1;
-                if (hits>highscore){
-                    highscore=hits;         
+                if (score>highscore){
+                    highscore=score;         
                 }
                 hits=0;
                 message="You lost!";
@@ -90,8 +90,8 @@ function roller() {
         else{
             if(score>1){
                 score=score-2;
-                if (hits>highscore){
-                    highscore=hits;
+                if (score>highscore){
+                    highscore=score;
                 }
                 message="You lose 2 points! ";
             }
@@ -99,7 +99,7 @@ function roller() {
                 if (cardCount>0){
                     cardCount--;
                     cardCountDisplay.innerText = cardCount;
-                    message= "Your Protection Card saved you!"
+                    message= "Your Protection shield saved you!"
                     if (cardCount === 0) {
                         cardContainer.style.visibility = "hidden"; 
                     }
@@ -117,7 +117,7 @@ function roller() {
     }
     scoreDisplay.innerText = `Score: ${score}`;
     HitsDisplay.innerText = `Rolls: ${hits}`;
-    HighScoreDisplay.innerText = `HighRoll: ${highscore}`;
+    HighScoreDisplay.innerText = `HighScore: ${highscore}`;
     messageBox.innerHTML = message;
     button.disabled = false;
     }, 200);
