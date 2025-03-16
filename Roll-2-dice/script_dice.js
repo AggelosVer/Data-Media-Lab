@@ -6,6 +6,8 @@ const HighScoreDisplay = document.querySelector (".highscore");
 const messageBox = document.querySelector(".message-box");
 const cardCountDisplay = document.querySelector(".card-count");
 const cardContainer = document.querySelector(".card-container");
+const infoButton = document.querySelector(".info-button");
+const cardInfo = document.querySelector(".card-info");
 
 let score=1;
 let hits=0;
@@ -17,6 +19,14 @@ HitsDisplay.innerText = `Rolls: ${hits}`;
 HighScoreDisplay.innerText = `HighScore: ${highscore}`;
 output.innerHTML += `&#${9861}; `; 
 output.innerHTML += `&#${9861}; `;
+
+infoButton.addEventListener("click", () => {
+    if (cardInfo.style.display === "none") {
+        cardInfo.style.display = "block";
+    } else {
+        cardInfo.style.display = "none";
+    }
+});
 
 button.addEventListener('click',() =>{
     hits ++;
